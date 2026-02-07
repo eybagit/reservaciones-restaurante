@@ -1,0 +1,114 @@
+/**
+ * Estilos personalizados - ReservaApp
+ * CSS Modular - Complementa Bootstrap
+ */
+
+/* === VARIABLES === */
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  --transition-fast: 0.2s ease;
+}
+
+/* === LAYOUT === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === CARDS === */
+.restaurante-card {
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  border: none;
+}
+
+.restaurante-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+/* === FILTROS === */
+.btn-check:checked + .btn-primary,
+.btn-check:checked + .btn-outline-primary {
+  background: var(--primary-gradient);
+  border-color: transparent;
+}
+
+/* === BADGES === */
+.badge {
+  font-weight: 500;
+}
+
+/* === ALERTS === */
+.alert {
+  border-radius: 0.5rem;
+}
+
+/* === MODALS === */
+.modal-content {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* === NAVBAR === */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+/* === TABLES === */
+.table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+/* === FORMS === */
+.form-control:focus,
+.form-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* === BUTTONS === */
+.btn-primary {
+  background: var(--primary-gradient);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5a6fd6 0%, #6a4190 100%);
+}
+
+/* === LOADING === */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem;
+  }
+  
+  .btn-group-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
