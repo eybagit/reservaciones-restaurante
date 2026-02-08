@@ -4,6 +4,16 @@
 
 ---
 
+## 📸 Capturas del Proyecto
+
+### Vista de Restaurantes
+![Vista de Restaurantes](src/front/assets/img/restaurante.png)
+
+### Vista de Reservas
+![Vista de Reservas](src/front/assets/img/reservas.png)
+
+---
+
 ## 🎯 ¿Qué es ReservaApp?
 
 ReservaApp es una aplicación web que permite a los restaurantes gestionar sus reservas de forma eficiente. Los usuarios pueden:
@@ -112,12 +122,7 @@ npm install
 # Iniciar servidor de desarrollo (puerto 3000)
 npm run dev
 ```
-
-### 4. Acceder a la aplicación
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:3001
-- **Admin Panel**: http://localhost:3001/admin
-
+ 
 ---
 
 ## 📁 Estructura del Proyecto
